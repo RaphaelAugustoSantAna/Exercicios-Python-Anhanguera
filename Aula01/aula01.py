@@ -22,7 +22,7 @@ print(type(fez_inscricao))
 nome = input()
 print(nome)
 
-#formatadores de caractere
+#formatadores de caracteres
 print("Olá, %s, bem vindo à disciplina de programação. Parabéns pelo seu primeiro hello world" %(nome))
 
 #F-string
