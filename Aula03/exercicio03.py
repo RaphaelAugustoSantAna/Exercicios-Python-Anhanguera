@@ -1,3 +1,8 @@
+# Vamos pensar na solução do problema apresentado no início desta aula. 
+# Precisamos criar um programa que seja capaz de percorrer todos os filmes 
+# (Filme 1, Filme 2, Filme 3, Filme 4 e Filme 5) e de atribuir a cada um deles uma nota de 1 a 5. 
+# Repare que é importante sempre disponibilizar uma forma de a pessoa encerrar o programa, caso queira.
+
 filmes = ["Filme 1", "Filme 2", "Filme 3", "Filme 4"," Filme 5"]
 
 #mensagem de boas vindas 
