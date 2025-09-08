@@ -1,4 +1,2 @@
-numeros = [1,2,3,4,5]
-
-for num in numeros:
-    print(num)
+for z in range(1, 11, 2):
+    print(z)
