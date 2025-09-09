@@ -1,3 +1,5 @@
+#Calculando a média dos alunos
+
 #Lista de notas dos alunos
 notas = [7.5, 8.0, 6.5, 9.0, 7.0]
 
