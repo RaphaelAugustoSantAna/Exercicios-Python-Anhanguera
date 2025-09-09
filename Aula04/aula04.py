@@ -28,8 +28,18 @@ def e_par(numero):
     else:
         return False
 
+
 numero = 6
 if e_par(numero):
     print(f"{numero} é um número par.")
 else:
     print(f"{numero} não é um número par.")
+
+#exemplo função anônima
+
+# Neste exemplo, criamos uma expressão lambda que realiza a adição de dois números, a e b.
+# Não atribuimos um nome à função, mas podemos usa-la como qualquer outra função.
+
+soma = lambda a, b: a + b
+resultado = soma(3, 4)
+print(resultado)
