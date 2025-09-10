@@ -1,3 +1,4 @@
-cores = ["vermelho", "azul", "amarelo", "roxo"]
-for cor in cores:
-    print(f"Posição = {cores.index(cor)}, cor = {cor}")
+linguagens = ["Python", "Java", "Javascript", "C", "C#", "C++", "Swift", "Go", "Kotlin"]
+print("Antes da listcomp = ", linguagens)
+linguagens = [item.lower() for item in linguagens]
+print("Depois da listcomp = ", linguagens)

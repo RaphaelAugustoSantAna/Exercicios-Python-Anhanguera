@@ -12,3 +12,10 @@ print(f"As 5 primeiras letras são: {texto[:5]}")
 cores = ["vermelho", "azul", "verde", "amarelo", "roxo"]
 for cor in cores:
     print(f"Posição = {cores.index(cor)}, cor = {cor}")
+
+# exemplo listcomp
+
+linguagens = ["Python", "Java", "Javascript", "C", "C#", "C++", "Swift", "Go", "Kotlin"]
+print("Antes da listcomp = ", linguagens)
+linguagens = [item.lower() for item in linguagens]
+print("Depois da listcomp = ", linguagens)
