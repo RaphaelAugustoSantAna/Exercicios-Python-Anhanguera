@@ -1,4 +1,5 @@
-linguagens = ["Python", "Java", "Javascript", "C", "C#", "C++", "Swift", "Go", "Kotlin"]
-print("Antes da listcomp = ", linguagens)
-linguagens = [item.lower() for item in linguagens]
-print("Depois da listcomp = ", linguagens)
+
+precos_em_dolares = [100, 50, 75, 120]
+taxa_de_cambio = 5.25
+precos_em_reais = list(map(lambda x: x * taxa_de_cambio, precos_em_dolares))
+print(precos_em_reais)
