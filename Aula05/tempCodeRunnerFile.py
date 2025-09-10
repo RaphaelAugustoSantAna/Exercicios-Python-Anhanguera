@@ -1,5 +1,4 @@
 
-precos_em_dolares = [100, 50, 75, 120]
-taxa_de_cambio = 5.25
-precos_em_reais = list(map(lambda x: x * taxa_de_cambio, precos_em_dolares))
-print(precos_em_reais)
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+numeros_pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(numeros_pares)
