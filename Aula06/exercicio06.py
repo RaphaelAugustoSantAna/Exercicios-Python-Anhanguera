@@ -5,20 +5,20 @@ import numpy as np
 participantes = [
     {
         "nome": "Alice",
-        "localização": "EUA",
-        "afiliação": "Universidade A",
+        "localizacao": "EUA",
+        "afiliacao": "Universidade A",
         "interesses": ["Física", "Astronomia"],
     },
     {
         "nome": "Bob",
-        "localização": "Brasil",
-        "afiliação": "Instituto B",
+        "localizacao": "Brasil",
+        "afiliacao": "Instituto B",
         "interesses": ["Biologia", "Astronomia"],
     },
     {
         "nome": "Charlie",
-        "localização": "Índia",
-        "afiliação": "Instituto C",
+        "localizacao": "Índia",
+        "afiliacao": "Instituto C",
         "interesses": ["Química", "Engenharia"],
     },
     # Adicione mais participantes conforme necessário
@@ -46,4 +46,5 @@ for participante in participantes:
     print("Regiões dos participantes:", regioes)
     print("Afiliações dos participantes:")
     for afiliacao, nomes in afiliacoes.items():
-        print("Área de interesse mais popular:", area_mais_popular)
+        print(f"{afiliacao}: {', '.join(nomes)}")
+    print("Área de interesse mais popular:", area_mais_popular)
