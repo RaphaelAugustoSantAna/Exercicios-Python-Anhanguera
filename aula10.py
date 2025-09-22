@@ -22,3 +22,14 @@ Exemplo2 = {"A": 100, "B": 200, "C": 300, "D": 400, "E": 500}
 series2 = pd.Series(data=Exemplo2)
 
 print(series2)
+
+################################################
+
+import pandas as pd
+
+url = "http://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/"
+
+dfs = pd.read_html(url)
+
+print(type(dfs))
+print(len(dfs))
