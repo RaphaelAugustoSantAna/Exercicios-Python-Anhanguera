@@ -1,11 +1,17 @@
+from flask import Flask
 
-from datetime import date
-from datetime import datetime as dt
+# criando uma aplicação flask
 
-data_extracao = date.today()
+app = Flask(__name__)
 
-df_selic["data_extracao"] = data_extracao
-df_selic["responsavel"] = "Autor"
+# rota para a página inicial
 
-print(df_selic.info())
-df_selic.head()
+
+@app.route("/")
+def hello():
+    return "Bem vindo ao back-end simples com Flask!"
+
+
+# executa a aplicação no host e na porta especificados
+if __name__ == "__main__":
+    app.run(host="localhost", port=5000)
