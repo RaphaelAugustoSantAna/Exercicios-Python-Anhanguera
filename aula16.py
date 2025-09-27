@@ -1,3 +1,5 @@
+# supervisionado
+
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
@@ -49,3 +51,42 @@ plt.show()
 # Por fim, plotamos a perda (loss) do modelo ao longo do treinamento. Usamos o history.history['loss'] para obter a lista das perdas em cada época.
 # Configuramos o título e rótulos dos eixos e exibimos o gráficos com plt.show().
 # Isso nos permite visualizar como a perda do modelo diminuiu durante o treinamento, o que é uma indicação do aprendizado do modelo.
+
+##############################################
+
+import tensorflow as tf
+
+from tensorflow.keras.layers import Input, Dense
+
+from tensorflow.keras.models import Model
+
+
+# Dados de exemplo
+
+X_unsupervised = tf.constant([[1.0, 2.0], [2.0, 3.0], [3.0, 4.0], [4.0, 5.0]])
+
+
+# Modelo Autoencoder Simples
+
+input_layer = Input(shape=(2,))
+
+encoded = Dense(units=1)(input_layer)
+
+decoded = Dense(units=2)(encoded)
+
+
+autoencoder = Model(inputs=input_layer, outputs=decoded)
+
+autoencoder.compile(optimizer="adam", loss="mean_squared_error")
+
+
+# Treinamento do modelo não supervisionado
+
+autoencoder.fit(X_unsupervised, X_unsupervised, epochs=1000, verbose=0)
+
+
+# Previsão
+
+prediction_unsupervised = autoencoder.predict(X_unsupervised)
+
+print("Predição Não Supervisionada:", prediction_unsupervised)
