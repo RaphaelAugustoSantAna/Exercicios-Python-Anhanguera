@@ -1,10 +1,18 @@
-def sum_numbers(numbers):
+class TestSumNumbers(unittest.TestCase):
 
-    assert sum([1, 2, 3, 4]) == 10
-    assert sum([-1, 0, 1]) == 0
-    assert sum([]) == 0
-    return sum([numbers])
+    def test_sum_numbers_positive(self):
+
+        self.assertEqual(sum_numbers([1, 2, 3, 4]), 10)
+
+    def test_sum_numbers_mixed(self):
+
+        self.assertEqual(sum_numbers([-1, 0, 1]), 0)
+
+    def test_sum_numbers_empty(self):
+
+        self.assertEqual(sum_numbers([]), 0)
 
 
-teste = sum_numbers([1, 2, 3, 4, 5])
-print(teste)
+if __name__ == "__main__":
+
+    unittest.main(argv=["first-arg-is-ignored"], exit=False)
