@@ -1,6 +1,3 @@
-import doctest
-
-
 def square(x):
     """
     Retorna o quadrado de um número
@@ -11,7 +8,7 @@ def square(x):
     >>> square(-2)
     4
     >>> square(0)
-    0
+    1
     """
     return x * x
     doctest.testmod()
