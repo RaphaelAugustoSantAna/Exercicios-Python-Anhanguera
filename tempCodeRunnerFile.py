@@ -1,20 +1,10 @@
-import unittest
+def sum_numbers(numbers):
+
+    assert sum([1, 2, 3, 4]) == 10
+    assert sum([-1, 0, 1]) == 0
+    assert sum([]) == 0
+    return sum([numbers])
 
 
-def add(a, b):
-    return a + b
-
-
-class TestAddition(unittest.TestCase):
-    def test_add_positive_numbers(self):
-        self.assertEqual(add(2, 3), 5)
-
-    def test_add_negative_numbers(self):
-        self.assertEqual(add(-2, -3), -5)
-
-
-if __name__ == "__main__":
-    import unittest
-
-    unittest.main(argv=["first-arg-is-ignored"], exit=False)
-    print("Os testes foram executados com sucesso!")
+teste = sum_numbers([1, 2, 3, 4, 5])
+print(teste)
